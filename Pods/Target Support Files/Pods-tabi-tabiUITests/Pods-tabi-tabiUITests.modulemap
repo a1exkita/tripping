@@ -1,0 +1,6 @@
+framework module Pods_tabi_tabiUITests {
+  umbrella header "Pods-tabi-tabiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

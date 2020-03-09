@@ -11,29 +11,33 @@ import SwiftUI
 private let dateFormatter: DateFormatter = {
     let dateFormatter = DateFormatter()
     dateFormatter.dateStyle = .medium
-    dateFormatter.timeStyle = .medium
     return dateFormatter
 }()
 
 struct ContentView: View {
-    @State private var dates = [Date]()
-
-    var body: some View {
+//    @State private var dates = [Date]()
+    var posts: [Post] = []
+    var body: some View{
         NavigationView {
-            MasterView(dates: $dates)
-                .navigationBarTitle(Text("Master"))
-                .navigationBarItems(
-                    leading: EditButton(),
-                    trailing: Button(
-                        action: {
-                            withAnimation { self.dates.insert(Date(), at: 0) }
-                        }
-                    ) {
-                        Image(systemName: "plus")
-                    }
-                )
-            DetailView()
-        }.navigationViewStyle(DoubleColumnNavigationViewStyle())
+            VStack {
+                List(posts){ post in
+                    PostCell(post: post)
+                }
+                .navigationBarTitle(Text("Posts"))
+            
+                Button(action: {
+                }) {
+                    Text("Send Message")
+                        .padding(.horizontal, 12.0)
+                        .padding(.vertical, 6.0)
+                        .foregroundColor(.white)
+                        .font(.system(size: 18))
+                        .background(Color.blue)
+                        .cornerRadius(8)
+                }
+            }
+        }
+        
     }
 }
 
@@ -72,6 +76,42 @@ struct DetailView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(posts: testData)
+    }
+}
+
+struct PostCell: View {
+    let post: Post
+    
+    var body: some View {
+        NavigationLink(destination: PostDetail(post: post)) {
+            VStack {
+                Image(post.thumbnailName)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 75, height: 75)
+                    .cornerRadius(128)
+            }
+            
+            VStack(alignment: .leading) {
+                Text(post.title)                
+                HStack(spacing: 6.0) {
+                    Text("\(post.nationality)")
+                    Text("\(post.gender)")
+                    Text("Age:\(post.age)")
+                    Text("with \(post.party) people")
+                }
+                    .font(.system(size: 12.5))
+                    .foregroundColor(.secondary)
+                    .padding(.top, 4.0)
+                Text("\(post.createdDate, formatter: dateFormatter)")
+                    .font(.system(size: 11))
+                    .foregroundColor(.secondary)
+                    .padding(.top, 4.0)
+                    .offset(x: 200)
+            }
+            .padding([.top, .leading], 12.0)
+        }
+        
     }
 }
