@@ -8,14 +8,34 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
+import CodableFirebase
+
+var testData:[Post] = []
+
+extension DocumentReference: DocumentReferenceType {}
+extension GeoPoint: GeoPointType {}
+extension FieldValue: FieldValueType {}
+extension Timestamp: TimestampType {}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        applicationDidLoad()
         return true
+    }
+    
+    func applicationDidLoad() {
+        Firestore.firestore().collection("posts").getDocuments { (snapshot, error) in
+    
+            print(snapshot)
+            for doc in snapshot!.documents {
+                let post = try! FirebaseDecoder().decode(Post.self, from: doc.data());
+                testData.append(post);
+            }
+        }
     }
 
     // MARK: UISceneSession Lifecycle
@@ -34,4 +54,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

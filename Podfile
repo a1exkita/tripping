@@ -7,9 +7,12 @@ target 'tabi' do
 
   # Pods for tabi
   pod 'Firebase'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Auth'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
+  pod 'CodableFirebase'
 
   target 'tabiTests' do
     inherit! :search_paths

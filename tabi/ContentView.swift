@@ -16,6 +16,11 @@ private let dateFormatter: DateFormatter = {
 
 struct ContentView: View {
     var posts: [Post] = []
+    
+    init(post: [Post]) {
+        posts = post;
+    }
+    
     var body: some View{
         NavigationView {
             VStack {
@@ -23,6 +28,8 @@ struct ContentView: View {
                     PostCell(post: post)
                 }
                 .navigationBarTitle(Text("Posts"))
+                
+                
             
             }
         }
@@ -32,7 +39,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(posts: testData)
+        ContentView(post: testData)
     }
 }
 
