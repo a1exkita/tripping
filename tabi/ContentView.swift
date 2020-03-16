@@ -15,7 +15,6 @@ private let dateFormatter: DateFormatter = {
 }()
 
 struct ContentView: View {
-//    @State private var dates = [Date]()
     var posts: [Post] = []
     var body: some View{
         NavigationView {
@@ -25,51 +24,8 @@ struct ContentView: View {
                 }
                 .navigationBarTitle(Text("Posts"))
             
-                Button(action: {
-                }) {
-                    Text("Send Message")
-                        .padding(.horizontal, 12.0)
-                        .padding(.vertical, 6.0)
-                        .foregroundColor(.white)
-                        .font(.system(size: 18))
-                        .background(Color.blue)
-                        .cornerRadius(8)
-                }
             }
         }
-        
-    }
-}
-
-struct MasterView: View {
-    @Binding var dates: [Date]
-
-    var body: some View {
-        List {
-            ForEach(dates, id: \.self) { date in
-                NavigationLink(
-                    destination: DetailView(selectedDate: date)
-                ) {
-                    Text("\(date, formatter: dateFormatter)")
-                }
-            }.onDelete { indices in
-                indices.forEach { self.dates.remove(at: $0) }
-            }
-        }
-    }
-}
-
-struct DetailView: View {
-    var selectedDate: Date?
-
-    var body: some View {
-        Group {
-            if selectedDate != nil {
-                Text("\(selectedDate!, formatter: dateFormatter)")
-            } else {
-                Text("Detail view content goes here")
-            }
-        }.navigationBarTitle(Text("Detail"))
     }
 }
 

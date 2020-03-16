@@ -13,8 +13,6 @@ struct PostDetail: View {
     @State private var zoomed = false
 
     var body: some View {
-//        let appURL = URL(string:  "instagram://user?username=\(post.usernameIG)")
-//        let webURL = URL(string:  "https://instagram.com/\(post.usernameIG)")
         VStack(){
             HStack {
                 Image(post.imageName)

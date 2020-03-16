@@ -6,10 +6,6 @@ target 'tabi' do
   use_frameworks!
 
   # Pods for tabi
-  pod 'amplify-tools'
-  pod 'Amplify'
-  pod 'AWSPluginsCore'
-  pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'Firebase/Analytics'

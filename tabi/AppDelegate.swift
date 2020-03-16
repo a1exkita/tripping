@@ -8,8 +8,6 @@
 
 import UIKit
 import Firebase
-//import Amplify
-//import AmplifyPlugins
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

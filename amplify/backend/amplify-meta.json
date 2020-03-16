@@ -35,7 +35,7 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/amplify-tabi-amplify-220251-deployment/amplify-cfn-templates/api/cloudformation-template.json",
                 "logicalId": "apiamplifyDatasource"
             },
-            "lastPushTimeStamp": "2020-03-09T13:28:51.236Z",
+            "lastPushTimeStamp": "2020-03-16T06:52:11.026Z",
             "lastPushDirHash": "wIwuIEmW/cGoiZzhJr1k2g5Vnc4="
         }
     }

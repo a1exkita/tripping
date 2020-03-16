@@ -21,8 +21,6 @@
 		B3C1E56A241123EC00E45FBD /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C1E569241123EC00E45FBD /* PostDetail.swift */; };
 		B3C1E56C2413657800E45FBD /* Users.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C1E56B2413657800E45FBD /* Users.xcassets */; };
 		B3FBEDF3241676A800B78BB2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3FBEDF2241676A800B78BB2 /* GoogleService-Info.plist */; };
-		BD18883DBCD14B41ACF3BD48 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 74F497241F2246D7B5BE59A5 /* amplifyconfiguration.json */; };
-		BF6AE51C2BBF4CB0BB43CA52 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = E8F0F09A1DCE44ACB680A866 /* awsconfiguration.json */; };
 		FBA892A1959E0565F068779E /* Pods_tabiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF76F50D20652750944BFAD9 /* Pods_tabiTests.framework */; };
 		FF9093A61B9F0257D57991A4 /* Pods_tabi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D745EB49BD621A18F9713C /* Pods_tabi.framework */; };
 /* End PBXBuildFile section */
@@ -45,13 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08512D4A04DD4ACCA6B8A918 /* amplifyxc.config */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = amplifyxc.config; path = ./amplifyxc.config; sourceTree = "<group>"; };
 		1189E5350FCAB8EFA468BA8E /* Pods-tabi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabi.release.xcconfig"; path = "Target Support Files/Pods-tabi/Pods-tabi.release.xcconfig"; sourceTree = "<group>"; };
 		24291799EC8FE539791FE3C8 /* Pods_tabi_tabiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tabi_tabiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		336D6E8FA9FA92BD2778476D /* Pods-tabi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabi.debug.xcconfig"; path = "Target Support Files/Pods-tabi/Pods-tabi.debug.xcconfig"; sourceTree = "<group>"; };
 		33E76107CEF08D6E08C757C6 /* Pods-tabiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabiTests.debug.xcconfig"; path = "Target Support Files/Pods-tabiTests/Pods-tabiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		71D745EB49BD621A18F9713C /* Pods_tabi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tabi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		74F497241F2246D7B5BE59A5 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = amplifyconfiguration.json; path = ./amplifyconfiguration.json; sourceTree = "<group>"; };
 		A1E9CE7F1596A0E663B67672 /* Pods-tabi-tabiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabi-tabiUITests.release.xcconfig"; path = "Target Support Files/Pods-tabi-tabiUITests/Pods-tabi-tabiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B392D098240EAA17000A023F /* tabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B392D09B240EAA17000A023F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +71,6 @@
 		B534A82A11A287CA973ECB37 /* Pods-tabiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabiTests.release.xcconfig"; path = "Target Support Files/Pods-tabiTests/Pods-tabiTests.release.xcconfig"; sourceTree = "<group>"; };
 		D714D10866884795E460093A /* Pods-tabi-tabiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabi-tabiUITests.debug.xcconfig"; path = "Target Support Files/Pods-tabi-tabiUITests/Pods-tabi-tabiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF76F50D20652750944BFAD9 /* Pods_tabiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tabiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8A0FD31DE384F57BBAAB329 /* amplify */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = amplify; path = ./amplify; sourceTree = "<group>"; };
-		E8F0F09A1DCE44ACB680A866 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = awsconfiguration.json; path = ./awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,10 +133,6 @@
 				B392D099240EAA17000A023F /* Products */,
 				AFA8A7D0D7AA3FB9F7D85A2B /* Pods */,
 				53DABF1CBB8914208D5EA344 /* Frameworks */,
-				08512D4A04DD4ACCA6B8A918 /* amplifyxc.config */,
-				E8F0F09A1DCE44ACB680A866 /* awsconfiguration.json */,
-				74F497241F2246D7B5BE59A5 /* amplifyconfiguration.json */,
-				E8A0FD31DE384F57BBAAB329 /* amplify */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,9 +157,9 @@
 				B392D09F240EAA17000A023F /* ContentView.swift */,
 				B392D0A1240EAA1A000A023F /* Assets.xcassets */,
 				B392D0A6240EAA1A000A023F /* LaunchScreen.storyboard */,
-				B392D0A9240EAA1A000A023F /* Info.plist */,
 				B392D0A3240EAA1A000A023F /* Preview Content */,
 				B3C1E56424111CC700E45FBD /* Post.swift */,
+				B392D0A9240EAA1A000A023F /* Info.plist */,
 				B3C1E569241123EC00E45FBD /* PostDetail.swift */,
 			);
 			path = tabi;
@@ -316,8 +306,6 @@
 				B392D0A5240EAA1A000A023F /* Preview Assets.xcassets in Resources */,
 				B3C1E56824111F6B00E45FBD /* Rooms.xcassets in Resources */,
 				B392D0A2240EAA1A000A023F /* Assets.xcassets in Resources */,
-				BF6AE51C2BBF4CB0BB43CA52 /* awsconfiguration.json in Resources */,
-				BD18883DBCD14B41ACF3BD48 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

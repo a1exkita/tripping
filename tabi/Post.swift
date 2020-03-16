@@ -8,6 +8,7 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
 
 struct Post : Identifiable {
     var id = UUID()
