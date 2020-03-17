@@ -29,9 +29,6 @@ struct ContentView: View {
                     PostCell(post: post)
                 }
                 .navigationBarTitle(Text("Posts"))
-                
-                
-            
             }
         }
     }

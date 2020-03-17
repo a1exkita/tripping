@@ -13,18 +13,13 @@ import CodableFirebase
 
 var testData:[Post] = []
 
-extension DocumentReference: DocumentReferenceType {}
-extension GeoPoint: GeoPointType {}
-extension FieldValue: FieldValueType {}
-extension Timestamp: TimestampType {}
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         return true
-    }    
+    }
 
     // MARK: UISceneSession Lifecycle
 
