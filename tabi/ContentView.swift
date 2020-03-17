@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Combine
 
 private let dateFormatter: DateFormatter = {
     let dateFormatter = DateFormatter()
@@ -17,8 +18,8 @@ private let dateFormatter: DateFormatter = {
 struct ContentView: View {
     var posts: [Post] = []
     
-    init(post: [Post]) {
-        posts = post;
+    init(posts: [Post]) {
+        self.posts = posts;
     }
     
     var body: some View{
@@ -39,7 +40,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(post: testData)
+        ContentView(posts: testData) 
     }
 }
 

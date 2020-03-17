@@ -8,6 +8,12 @@
 
 import UIKit
 import SwiftUI
+import Firebase
+import FirebaseFirestore
+import CodableFirebase
+import Combine
+
+//var testData : [Post] = []
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,17 +24,43 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView(post: testData)
+        
+        // write data
+//        testData.forEach { eachData in
+//            let data = try! FirebaseEncoder().encode(eachData)
+//            print(data)
+//            Firestore.firestore().collection("posts").document().setData(data as! [String : Any]){ error in
+//                if let error = error {
+//                    print("Error for writing data: \(error)")
+//                } else {
+//                    print("Document successfully written!")
+//                }
+//            }
+//        }
+        
+        // read data
+        Firestore.firestore().collection("posts").getDocuments { querySnapshot, error in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                for document in querySnapshot!.documents {
+                    let post = try! FirebaseDecoder().decode(Post.self, from: document.data());
+                    testData.append(post);
+                }
+            }
+            let contentView = ContentView(posts: testData)
+            if let windowScene = scene as? UIWindowScene {
+                let window = UIWindow(windowScene: windowScene)
+                window.rootViewController = UIHostingController(rootView: contentView)
+                self.window = window
+                window.makeKeyAndVisible()
+            }
+        }
+        
     
         // Use a UIHostingController as window root view controller.
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
-            self.window = window
-            window.makeKeyAndVisible()
-        }
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

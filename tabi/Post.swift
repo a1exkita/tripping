@@ -9,6 +9,7 @@
 
 import SwiftUI
 import FirebaseFirestore
+import Combine
 
 struct Post : Identifiable, Codable {
     var id = UUID()
@@ -23,7 +24,7 @@ struct Post : Identifiable, Codable {
     var message: String
     var party: Int
     var hasVideo: Bool = false
-    var createdDate: Timestamp
+    var createdDate: Date
 
     var imageName: String {return name}
     var thumbnailName: String {return name + "Thumb"}
@@ -31,7 +32,7 @@ struct Post : Identifiable, Codable {
 
 #if DEBUG
 //let current = Date()
-//let testData = [
+//var testData = [
 //    Post(name: "John", gender: "Male", age: 24,
 //         nationality: "🇬🇧", lang: "EN", usernameIG: "at_north",
 //         title: "Hang out tonight in Kyoto?",
