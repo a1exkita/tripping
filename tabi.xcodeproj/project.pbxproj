@@ -19,6 +19,7 @@
 		B31D7649242343D500012B3B /* InlineAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D7648242343D500012B3B /* InlineAlert.swift */; };
 		B31D764B242349D400012B3B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D764A242349D400012B3B /* SignUpView.swift */; };
 		B31D764D24235A2E00012B3B /* AppHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D764C24235A2E00012B3B /* AppHomeView.swift */; };
+		B31D7651242372CB00012B3B /* AdaptsToSoftwareKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D7650242372CB00012B3B /* AdaptsToSoftwareKeyboard.swift */; };
 		B392D09C240EAA17000A023F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392D09B240EAA17000A023F /* AppDelegate.swift */; };
 		B392D09E240EAA17000A023F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392D09D240EAA17000A023F /* SceneDelegate.swift */; };
 		B392D0A0240EAA17000A023F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392D09F240EAA17000A023F /* ContentView.swift */; };
@@ -68,6 +69,7 @@
 		B31D7648242343D500012B3B /* InlineAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAlert.swift; sourceTree = "<group>"; };
 		B31D764A242349D400012B3B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		B31D764C24235A2E00012B3B /* AppHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHomeView.swift; sourceTree = "<group>"; };
+		B31D7650242372CB00012B3B /* AdaptsToSoftwareKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToSoftwareKeyboard.swift; sourceTree = "<group>"; };
 		B392D098240EAA17000A023F /* tabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B392D09B240EAA17000A023F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B392D09D240EAA17000A023F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +183,11 @@
 				B392D09F240EAA17000A023F /* ContentView.swift */,
 				B31D764C24235A2E00012B3B /* AppHomeView.swift */,
 				B31D764224233E5400012B3B /* SignInView.swift */,
+				B31D7650242372CB00012B3B /* AdaptsToSoftwareKeyboard.swift */,
 				B31D764A242349D400012B3B /* SignUpView.swift */,
+				B31D76442423431000012B3B /* CustomInput.swift */,
+				B31D76462423438600012B3B /* CustomButton.swift */,
+				B31D7648242343D500012B3B /* InlineAlert.swift */,
 				B3C1E569241123EC00E45FBD /* PostDetail.swift */,
 				86082E80241F5D3700BA360C /* GoogleService-Info.plist */,
 				B392D0A9240EAA1A000A023F /* Info.plist */,
@@ -190,9 +196,6 @@
 				B392D0A1240EAA1A000A023F /* Assets.xcassets */,
 				B392D0A6240EAA1A000A023F /* LaunchScreen.storyboard */,
 				B392D0A3240EAA1A000A023F /* Preview Content */,
-				B31D76442423431000012B3B /* CustomInput.swift */,
-				B31D76462423438600012B3B /* CustomButton.swift */,
-				B31D7648242343D500012B3B /* InlineAlert.swift */,
 			);
 			path = tabi;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				B3C1E56A241123EC00E45FBD /* PostDetail.swift in Sources */,
 				B31D7649242343D500012B3B /* InlineAlert.swift in Sources */,
 				B392D09C240EAA17000A023F /* AppDelegate.swift in Sources */,
+				B31D7651242372CB00012B3B /* AdaptsToSoftwareKeyboard.swift in Sources */,
 				B31D763E24233D3600012B3B /* SessionStore.swift in Sources */,
 				B31D764B242349D400012B3B /* SignUpView.swift in Sources */,
 				B392D09E240EAA17000A023F /* SceneDelegate.swift in Sources */,
@@ -645,6 +649,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"tabi/Preview Content\"";
+				DEVELOPMENT_TEAM = 8723GT3N5R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = tabi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -665,6 +670,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"tabi/Preview Content\"";
+				DEVELOPMENT_TEAM = 8723GT3N5R;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = tabi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -41,7 +41,7 @@ struct SignInView : View {
             VStack {
                 Spacer()
                 Group {
-                    Image("julienne-logo")
+                    Image("tripping-logo")
                         .resizable()
                         .frame(width: 75, height: 75)
                     Text("Tripping").font(.title).padding(.bottom)
@@ -54,11 +54,13 @@ struct SignInView : View {
                 Spacer()
                 Group {
                     Divider()
-                    CustomInput(text: $email, name: "Email")
-                        .padding()
-                    SecureField("Password", text: $password)
-                        .modifier(InputModifier())
-                        .padding([.leading, .trailing])
+                    Group{
+                        CustomInput(text: $email, name: "Email")
+                            .padding()
+                        SecureField("Password", text: $password)
+                            .modifier(InputModifier())
+                            .padding([.leading, .trailing])
+                    }
                     if (error) {
                         InlineAlert(
                             title: "Hmm... That didn't work.",

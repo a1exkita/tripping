@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        testData.forEach { eachData in
 //            let data = try! FirebaseEncoder().encode(eachData)
 //            print(data)
-//            Firestore.firestore().collection("posts").document().setData(data as! [String : Any]){ error in
+//            Firestore.firestore().collection("posts").document().setData(data as! [String® : Any]){ error in
 //                if let error = error {
 //                    print("Error for writing data: \(error)")
 //                } else {
