@@ -13,6 +13,7 @@ target 'tabi' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
   pod 'CodableFirebase'
+  pod 'FBSDKLoginKit'
 
   target 'tabiTests' do
     inherit! :search_paths

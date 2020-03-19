@@ -13,8 +13,6 @@ import FirebaseFirestore
 import CodableFirebase
 import Combine
 
-//var testData : [Post] = []
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
