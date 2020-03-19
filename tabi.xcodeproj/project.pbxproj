@@ -11,6 +11,14 @@
 		86082E81241F5D3700BA360C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 86082E80241F5D3700BA360C /* GoogleService-Info.plist */; };
 		86082E84241F5E2500BA360C /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86082E82241F5E2400BA360C /* Rooms.xcassets */; };
 		86082E85241F5E2500BA360C /* Users.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86082E83241F5E2500BA360C /* Users.xcassets */; };
+		B31D763E24233D3600012B3B /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D763D24233D3600012B3B /* SessionStore.swift */; };
+		B31D764024233D6300012B3B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D763F24233D6300012B3B /* User.swift */; };
+		B31D764324233E5400012B3B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D764224233E5400012B3B /* SignInView.swift */; };
+		B31D76452423431000012B3B /* CustomInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D76442423431000012B3B /* CustomInput.swift */; };
+		B31D76472423438600012B3B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D76462423438600012B3B /* CustomButton.swift */; };
+		B31D7649242343D500012B3B /* InlineAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D7648242343D500012B3B /* InlineAlert.swift */; };
+		B31D764B242349D400012B3B /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D764A242349D400012B3B /* SignUpView.swift */; };
+		B31D764D24235A2E00012B3B /* AppHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D764C24235A2E00012B3B /* AppHomeView.swift */; };
 		B392D09C240EAA17000A023F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392D09B240EAA17000A023F /* AppDelegate.swift */; };
 		B392D09E240EAA17000A023F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392D09D240EAA17000A023F /* SceneDelegate.swift */; };
 		B392D0A0240EAA17000A023F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B392D09F240EAA17000A023F /* ContentView.swift */; };
@@ -52,6 +60,14 @@
 		86082E82241F5E2400BA360C /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
 		86082E83241F5E2500BA360C /* Users.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Users.xcassets; sourceTree = "<group>"; };
 		A1E9CE7F1596A0E663B67672 /* Pods-tabi-tabiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tabi-tabiUITests.release.xcconfig"; path = "Target Support Files/Pods-tabi-tabiUITests/Pods-tabi-tabiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B31D763D24233D3600012B3B /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		B31D763F24233D6300012B3B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B31D764224233E5400012B3B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B31D76442423431000012B3B /* CustomInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInput.swift; sourceTree = "<group>"; };
+		B31D76462423438600012B3B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B31D7648242343D500012B3B /* InlineAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineAlert.swift; sourceTree = "<group>"; };
+		B31D764A242349D400012B3B /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B31D764C24235A2E00012B3B /* AppHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHomeView.swift; sourceTree = "<group>"; };
 		B392D098240EAA17000A023F /* tabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B392D09B240EAA17000A023F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B392D09D240EAA17000A023F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +140,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B31D764124233D8A00012B3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3C1E56424111CC700E45FBD /* Post.swift */,
+				B31D763F24233D6300012B3B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B392D08F240EAA17000A023F = {
 			isa = PBXGroup;
 			children = (
@@ -149,18 +174,25 @@
 		B392D09A240EAA17000A023F /* tabi */ = {
 			isa = PBXGroup;
 			children = (
-				86082E80241F5D3700BA360C /* GoogleService-Info.plist */,
+				B31D764124233D8A00012B3B /* Model */,
 				B392D09B240EAA17000A023F /* AppDelegate.swift */,
 				B392D09D240EAA17000A023F /* SceneDelegate.swift */,
+				B31D763D24233D3600012B3B /* SessionStore.swift */,
 				B392D09F240EAA17000A023F /* ContentView.swift */,
+				B31D764C24235A2E00012B3B /* AppHomeView.swift */,
+				B31D764224233E5400012B3B /* SignInView.swift */,
+				B31D764A242349D400012B3B /* SignUpView.swift */,
+				B3C1E569241123EC00E45FBD /* PostDetail.swift */,
+				86082E80241F5D3700BA360C /* GoogleService-Info.plist */,
+				B392D0A9240EAA1A000A023F /* Info.plist */,
 				86082E82241F5E2400BA360C /* Rooms.xcassets */,
 				86082E83241F5E2500BA360C /* Users.xcassets */,
 				B392D0A1240EAA1A000A023F /* Assets.xcassets */,
 				B392D0A6240EAA1A000A023F /* LaunchScreen.storyboard */,
 				B392D0A3240EAA1A000A023F /* Preview Content */,
-				B3C1E56424111CC700E45FBD /* Post.swift */,
-				B392D0A9240EAA1A000A023F /* Info.plist */,
-				B3C1E569241123EC00E45FBD /* PostDetail.swift */,
+				B31D76442423431000012B3B /* CustomInput.swift */,
+				B31D76462423438600012B3B /* CustomButton.swift */,
+				B31D7648242343D500012B3B /* InlineAlert.swift */,
 			);
 			path = tabi;
 			sourceTree = "<group>";
@@ -434,10 +466,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C1E56A241123EC00E45FBD /* PostDetail.swift in Sources */,
+				B31D7649242343D500012B3B /* InlineAlert.swift in Sources */,
 				B392D09C240EAA17000A023F /* AppDelegate.swift in Sources */,
+				B31D763E24233D3600012B3B /* SessionStore.swift in Sources */,
+				B31D764B242349D400012B3B /* SignUpView.swift in Sources */,
 				B392D09E240EAA17000A023F /* SceneDelegate.swift in Sources */,
+				B31D76472423438600012B3B /* CustomButton.swift in Sources */,
 				B3C1E56524111CC700E45FBD /* Post.swift in Sources */,
+				B31D764D24235A2E00012B3B /* AppHomeView.swift in Sources */,
+				B31D76452423431000012B3B /* CustomInput.swift in Sources */,
 				B392D0A0240EAA17000A023F /* ContentView.swift in Sources */,
+				B31D764024233D6300012B3B /* User.swift in Sources */,
+				B31D764324233E5400012B3B /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

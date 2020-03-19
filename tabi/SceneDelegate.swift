@@ -47,7 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                     testData.append(post);
                 }
             }
-            let contentView = ContentView(posts: testData)
+            let contentView = ContentView().environmentObject(SessionStore())
             if let windowScene = scene as? UIWindowScene {
                 let window = UIWindow(windowScene: windowScene)
                 window.rootViewController = UIHostingController(rootView: contentView)
